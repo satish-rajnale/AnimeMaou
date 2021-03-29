@@ -17,8 +17,12 @@ function MainContent(props) {
                 </form>
             </div>
             <div className="anime-list">
-                { props.animeList.map( anime => (
+                {  props.animeList.length!==0?props.animeList.map( anime => (
                    <AnimeCard
+                        anime={anime}
+                        key={anime.mal_id}/>
+                )) : props.topAnime.map( anime => (
+                    <AnimeCard
                         anime={anime}
                         key={anime.mal_id}/>
                 ))

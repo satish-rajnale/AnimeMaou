@@ -5,6 +5,11 @@
 
 	font-family: 'Fira Sans', sans-serif;
 }
+.App{
+	background-image: url('./bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 header {
 	padding-top: 50px;
@@ -35,7 +40,7 @@ header {
 			padding-right: 16px;
 
 			h3 {
-				color: #313131;
+				color: #df4b4b;
 				font-size: 24px;
 				margin-bottom: 16px;
 			}
@@ -45,19 +50,19 @@ header {
 				padding: 8px 16px;
 				text-align: left;
 
-				color: #888;
+				color: rgb(255, 255, 255);
 				font-size: 16px;
 				margin-bottom: 16px;
 
-				background-color: #EEE;
-				border-radius: 999px;
+				background-color: rgb(100, 96, 96);
+				border-radius: 8px;
 				text-decoration: none;
 
 				transition: 0.4s;
 
 				&:hover {
 					background-color: #313131;
-					color: #AAA;
+					color: rgb(255, 255, 255);
 				}
 			}
 		}
@@ -81,22 +86,23 @@ header {
 					background: none;
 					outline: none;
 					border: none;
-
+					font-size: large;
 					display: block;
 					width: 100%;
+					height:30px;
 					max-width: 400px;
 					padding: 16px;
-					border-radius: 999px;
-					background-color: #EEE;
+					border-radius: 5px;
+					background-color: rgb(42, 40, 40);
 
 					transition: 0.4s;
 
 					::placeholder {
-						color: #888;
+						color: rgb(0, 0, 0);
 					}
 
 					&:focus, &:valid {
-						background-color: #313131;
+						background-color: #313030;
 						color: #FFF;
 					}
 				}
@@ -111,7 +117,7 @@ header {
 
 			.anime-card {
 				flex: 1 1 33.333%;
-				max-width: 33.333%;
+				max-width: 20%;
 				padding: 16px 8px;
 
 				a {
@@ -127,22 +133,23 @@ header {
 						width: 100%;
 						height: 350px;
 						object-fit: cover;
-						border-radius: 16px;
+						border-radius: 4px;
 						box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
 
-						transition: 0.4s;
+						transition: 0.2s;
 					}
 				}
 
 				h3 {
-					color: #313131;
+					color: #ffffff;
+					font-weight: 400;
 				}
 
 				&:hover {
 					figure {
 						img {
 							box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
-							transform: scale(1.05);
+							transform: scale(1.08);
 						}
 					}
 				}

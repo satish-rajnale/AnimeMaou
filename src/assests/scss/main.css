@@ -6,6 +6,12 @@
   font-family: 'Fira Sans', sans-serif;
 }
 
+.App {
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -42,7 +48,7 @@ header h1 strong {
 }
 
 .content-wrap aside nav h3 {
-  color: #313131;
+  color: #df4b4b;
   font-size: 24px;
   margin-bottom: 16px;
 }
@@ -51,11 +57,11 @@ header h1 strong {
   display: block;
   padding: 8px 16px;
   text-align: left;
-  color: #888;
+  color: white;
   font-size: 16px;
   margin-bottom: 16px;
-  background-color: #EEE;
-  border-radius: 999px;
+  background-color: #646060;
+  border-radius: 8px;
   text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -63,7 +69,7 @@ header h1 strong {
 
 .content-wrap aside nav a:hover {
   background-color: #313131;
-  color: #AAA;
+  color: white;
 }
 
 .content-wrap main {
@@ -101,34 +107,36 @@ header h1 strong {
   background: none;
   outline: none;
   border: none;
+  font-size: large;
   display: block;
   width: 100%;
+  height: 30px;
   max-width: 400px;
   padding: 16px;
-  border-radius: 999px;
-  background-color: #EEE;
+  border-radius: 5px;
+  background-color: #2a2828;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .content-wrap main .main-head .search-box input ::-webkit-input-placeholder {
-  color: #888;
+  color: black;
 }
 
 .content-wrap main .main-head .search-box input :-ms-input-placeholder {
-  color: #888;
+  color: black;
 }
 
 .content-wrap main .main-head .search-box input ::-ms-input-placeholder {
-  color: #888;
+  color: black;
 }
 
 .content-wrap main .main-head .search-box input ::placeholder {
-  color: #888;
+  color: black;
 }
 
 .content-wrap main .main-head .search-box input:focus, .content-wrap main .main-head .search-box input:valid {
-  background-color: #313131;
+  background-color: #313030;
   color: #FFF;
 }
 
@@ -146,7 +154,7 @@ header h1 strong {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
-  max-width: 33.333%;
+  max-width: 20%;
   padding: 16px 8px;
 }
 
@@ -165,21 +173,22 @@ header h1 strong {
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 16px;
+  border-radius: 4px;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .content-wrap main .anime-list .anime-card h3 {
-  color: #313131;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 .content-wrap main .anime-list .anime-card:hover figure img {
   -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 /*# sourceMappingURL=main.css.map */

@@ -15,6 +15,13 @@ function Sidebar({topAnime}) {
                 </a>
                 ))}
             </nav>
+            <nav> <a 
+                    href="#"
+                    target="_blank"
+                    key="more"
+                    rel="noreferrer">
+                    More...
+                </a></nav>
         </aside>
     )
 }

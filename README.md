@@ -1,4 +1,8 @@
-# Anime
+# AnimeMaou
+
+A single page web-app to view top monthly anime's or a list of recent releases of anime's.
+
+
 
 ## `npm start`
 Runs the app in the development mode.\

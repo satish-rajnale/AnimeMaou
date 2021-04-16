@@ -2,7 +2,7 @@
 
 A single page web-app to view top monthly anime's or a list of recent releases of anime's.
 
-
+I used React as the backbone of this web-app.
 
 ## `npm start`
 Runs the app in the development mode.\

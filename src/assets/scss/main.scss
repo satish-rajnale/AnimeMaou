@@ -16,7 +16,6 @@ $hover-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.34),
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "Courier New", Courier, monospace;
 }
 .App {
@@ -26,12 +25,12 @@ $hover-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.34),
 }
 
 header {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 30px;
 
   h1 {
     color: rgb(212, 211, 211);
-    font-size: 36px;
+    font-size: 1.2em;
     font-weight: 400;
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
@@ -49,7 +48,7 @@ header {
   display: flex;
 
   aside {
-    flex: 1 1 250px;
+    
     max-width: fit-content;
     padding-right: 16px;
 
@@ -59,7 +58,7 @@ header {
 
       h3 {
         color: #df4b4b;
-        font-size: 34px;
+        font-size: 27px;
         padding: 8px 10px;
         font-family: "Courier New", Courier, monospace;
         margin-bottom: 16px;
@@ -68,19 +67,19 @@ header {
         background-color: $btn-light;
         border-radius: 8px;
         display: block;
-        padding: 8px 16px;
+        padding: 5px 12px;
         height: fit-content;
-        min-height: 60px;
+        min-height: 2em;
         align-items: center;
-        width: 320px;
+        width: 280px;
         display: flex;
         margin-bottom: 16px;
         transition: 0.2s;
         cursor: pointer;
         box-shadow: $boxShadow;
         img {
-          height: 70px;
-          width: 50px;
+          height: 57px;
+          width: 39px;
           border-radius: 4px;
         }
         .top-text {
@@ -89,7 +88,7 @@ header {
           align-items: flex-start;
           padding-left: 10px;
           p {
-            font-size: 18px;
+            font-size: 16px;
             color: #c7c8d6;
             font-variant-numeric: ordinal;
             font-family: "Source Sans Pro";
@@ -98,7 +97,7 @@ header {
           a {
             text-align: left;
             color: #c7c8d6;
-            font-size: 20px;
+            font-size: 17px;
             text-decoration: none;
           }
         }
@@ -132,12 +131,12 @@ header {
           text-decoration: none;
           outline: none;
           border: none;
-          font-size: 20px;
+          font-size: 16px;
           display: block;
-          width: 100%;
-          height: 50px;
-          max-width: 400px;
-          padding: 16px;
+          width: 50%;
+          height: 2.55em;
+          max-width:20em;
+          padding: 13px;
           border-radius: 5px;
           background-color: rgb(42, 40, 40);
           box-shadow: $boxShadow;
@@ -158,14 +157,14 @@ header {
 
     .anime-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-      margin-top: 32px;
-      margin: 32px -8px 0px;
-		gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(8em,1fr));
+    
+      margin: 1em -8px 0px;
+		gap:10px;
       .anime-card {
         
         max-width: 100%;
-        padding: 16px 8px;
+        padding: 12px 8px;
         flex-wrap: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -180,7 +179,7 @@ header {
           img {
             display: block;
             width: 100%;
-            height: 350px;
+            height: 11.8em;
             object-fit: cover;
             border-radius: 4px;
             box-shadow: $boxShadow;
@@ -190,6 +189,7 @@ header {
 
         h3 {
           color: #ffffff;
+		  font-size: 22px;
           font-weight: 400;
           text-overflow: ellipsis;
         }
@@ -203,7 +203,7 @@ header {
           }
           h3 {
             color: #ff4949;
-            font-weight: 400;
+            font-weight: 600;
           }
         }
       }
@@ -212,8 +212,8 @@ header {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
-  height: 40px;
+  width: 15px;
+  
 }
 
 /* Track */

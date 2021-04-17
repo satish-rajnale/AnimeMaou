@@ -1,14 +1,13 @@
 $bg-color: #262c69;
 $btn-light: lighten($bg-color, 10%);
-
-
+$font-stack:    Helvetica, sans-serif;
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
-	font-family: 'Fira Sans', sans-serif;
+	font-variant-numeric: ordinal;
+	font-family: 'Georgia', sans-serif;
 }
 .App{
 	background-color: $bg-color;
@@ -36,7 +35,7 @@ header {
 
 	aside {
 		flex: 1 1 250px;
-		max-width: 250px;
+		max-width:fit-content;
 		padding-right: 16px;
 
 		nav {
@@ -48,27 +47,46 @@ header {
 				font-size: 24px;
 				margin-bottom: 16px;
 			}
-
-			a {
-				display: block;
-				padding: 8px 16px;
-				text-align: left;
-
-				color: #c7c8d6;
-				font-size: 16px;
-				margin-bottom: 16px;
-
+			.top-list {
 				background-color:$btn-light;
 				border-radius: 8px;
-				text-decoration: none;
-
-				transition: 0.4s;
+				display: block;
+			    padding: 8px 16px;
+				height: fit-content;
+				width:320px;
+				display:flex;
+				margin-bottom: 16px;
+				transition: 0.2s;
+				cursor: pointer;
+				img {
+					height:70px;
+					width:50px;
+					border-radius: 8px ;
+				}
+				.top-text{
+					display:flex;
+					flex-direction: column;
+					align-items: flex-start;
+					padding-left: 10px;
+					p{			
+						font-size: 18px;
+						color: #c7c8d6;
+						font-variant-numeric: ordinal;
+						line-height: 40px;					}
+					a {
+						text-align: left;
+						color: #c7c8d6;
+						font-size: 25px;
+						text-decoration: none;	
+					}
+				}
 
 				&:hover {
 					background-color: #313131;
 					color: rgb(255, 255, 255);
 				}
 			}
+			
 		}
 	}
 

@@ -17,8 +17,8 @@ $hover-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.34),
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-variant-numeric: ordinal;
-	font-family: 'Georgia', sans-serif;
+
+	font-family:'Courier New', Courier, monospace;
 }
 .App{
 	background-color: $bg-color;
@@ -27,16 +27,20 @@ $hover-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.34),
 
 header {
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 
 	h1 {
-		color: #AAA;
+		color: rgb(212, 211, 211);
 		font-size: 36px;
 		font-weight: 400;
 		text-align: center;
-
+		text-shadow:  2px 2px 4px #000000;
+		
+		:hover {
+			cursor: pointer;
+		}
 		strong {
-			color: #060a3d;
+			color: #ff2222;
 		}
 	}
 }
@@ -55,8 +59,9 @@ header {
 
 			h3 {
 				color: #df4b4b;
-				font-size: 24px;
-				padding: 8px 16px;
+				font-size: 34px;
+				padding: 8px 10px;
+				font-family:'Courier New', Courier, monospace;
 				margin-bottom: 16px;
 			}
 			.top-list {

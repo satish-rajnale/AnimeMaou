@@ -1,3 +1,8 @@
+$bg-color: #262c69;
+$btn-light: lighten($bg-color, 10%);
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,9 +11,8 @@
 	font-family: 'Fira Sans', sans-serif;
 }
 .App{
-	background-image: url('./bg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: $bg-color;
+	
 }
 
 header {
@@ -22,7 +26,7 @@ header {
 		text-align: center;
 
 		strong {
-			color: #313131;
+			color: #060a3d;
 		}
 	}
 }
@@ -50,11 +54,11 @@ header {
 				padding: 8px 16px;
 				text-align: left;
 
-				color: rgb(255, 255, 255);
+				color: #c7c8d6;
 				font-size: 16px;
 				margin-bottom: 16px;
 
-				background-color: rgb(100, 96, 96);
+				background-color:$btn-light;
 				border-radius: 8px;
 				text-decoration: none;
 
@@ -86,10 +90,10 @@ header {
 					background: none;
 					outline: none;
 					border: none;
-					font-size: large;
+					font-size: 20px;
 					display: block;
 					width: 100%;
-					height:30px;
+					height:50px;
 					max-width: 400px;
 					padding: 16px;
 					border-radius: 5px;

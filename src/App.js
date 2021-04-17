@@ -35,11 +35,11 @@ function App() {
   }
 
   const FetchAnime = async (query) => {
-    // const temp = await fetch(`https://api.jikan.moe/v3/search/anime?q=${query}&order_by=popularity&sort=desc`)
-    //               .then(res => res.json());
-    const episodes = await fetch(`https://api.jikan.moe/v3/anime/1/episodes/2`)
-    .then(res => res.json());
-          setAnimeList(episodes.results);
+    const temp = await fetch(`https://api.jikan.moe/v3/search/anime?q=${query}&order_by=popularity&sort=desc`)
+                  .then(res => res.json());
+  //  // const episodes = await fetch(`https://api.jikan.moe/v3/anime/1/episodes/2`)
+  //   .then(res => res.json());
+          setAnimeList(temp.results);
   }
 
   return (

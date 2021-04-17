@@ -11,7 +11,7 @@ function AnimeCard({anime}) {
                         src={anime.image_url}
                         alt={anime.title}/>
                </figure>
-               <h3>{anime.title}</h3>
+               <h3 style={{textOverflow:"ellipsis"}}>{anime.title}</h3>
            </a>
        </article>
     )

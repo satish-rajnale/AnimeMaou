@@ -3,7 +3,7 @@
 function Header() {
     return (
         <header>
-            <h1>The<strong>Anime</strong>List</h1>
+            <h1>The<strong href="/">Anime</strong>List</h1>
         </header>
     )
 }

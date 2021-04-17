@@ -1,0 +1,23 @@
+@media only screen and (max-width: 600px){
+
+    aside {
+     display: none;
+    }
+	.content-wrap {
+		display: grid;
+    	.anime-list {
+			display: grid;
+			flex:1;
+			width:fit-content;
+			grid-template-columns: repeat(2, 1fr); 
+			margin:0px;
+			grid-gap: 1rem;
+			.anime-card {
+				max-width: fit-content;
+				flex:1;
+				padding: 1rem;
+			}
+         
+		}
+    }
+}

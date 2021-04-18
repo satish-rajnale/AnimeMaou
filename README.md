@@ -6,6 +6,20 @@ I used React as the backbone of this web-app and SCSS preprocessor for styling.
 
 For the data on anime-list I used Jikan api which is a great fast and easy to use api by MyAnimeList.\
 
+## Demo:
+
+<a href="https://anime-maou.web.app/"><img src="https://github.com/satish-rajnale/AnimaeMaou/blob/master/public/animeMaou.gif"/></a>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -13,11 +27,11 @@ For the data on anime-list I used Jikan api which is a great fast and easy to us
 
 
 ## You can start using it and edit by running following commands.
-## `npm start`
+## `yarn start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000)
 
-### `npm run build`
+### `yarn run build`
 Builds the app for production to the `build` folder.\
 
 

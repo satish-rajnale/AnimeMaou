@@ -10,17 +10,16 @@ $hover-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.34),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.2);
 
-
-  
-* {
+  *,*::after,*::before{
   margin: 0;
   padding: 0;
+ 
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
 }
 .App {
   background-color: $bg-color;
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -48,7 +47,6 @@ header {
   display: flex;
 
   aside {
-    
     max-width: fit-content;
     padding-right: 16px;
 
@@ -135,7 +133,7 @@ header {
           display: block;
           width: 50%;
           height: 2.55em;
-          max-width:20em;
+          max-width: 50em;
           padding: 13px;
           border-radius: 5px;
           background-color: rgb(42, 40, 40);
@@ -157,13 +155,12 @@ header {
 
     .anime-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(8em,1fr));
-    
+      grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+
       margin: 1em -8px 0px;
-		gap:10px;
+      gap: 10px;
       .anime-card {
-        
-        max-width: 100%;
+        width: 100%;
         padding: 12px 8px;
         flex-wrap: nowrap;
         overflow: hidden;
@@ -178,7 +175,7 @@ header {
 
           img {
             display: block;
-            width: 100%;
+            width: 7rem;
             height: 11.8em;
             object-fit: cover;
             border-radius: 4px;
@@ -189,7 +186,7 @@ header {
 
         h3 {
           color: #ffffff;
-		  font-size: 22px;
+          font-size: 22px;
           font-weight: 400;
           text-overflow: ellipsis;
         }
@@ -213,7 +210,6 @@ header {
 
 ::-webkit-scrollbar {
   width: 15px;
-  
 }
 
 /* Track */
@@ -231,65 +227,60 @@ header {
   background: #b30000;
 }
 
-
 @media (min-width: 738px) and (max-width: 900px) {
-
-    aside {
-     display: none;
+  aside {
+    display: none;
+  }
+  .content-wrap {
+    .anime-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-auto-flow: dense;
+      grid-gap: 1rem;
+      .anime-card {
+        max-width: 100%;
+        img {
+          display: block;
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+          border-radius: 4px;
+          box-shadow: $boxShadow;
+          transition: 0.2s ease;
+        }
+      }
     }
-	.content-wrap {
-	
-    	.anime-list {
-			display: grid;
-			grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
-			grid-auto-flow: dense;
-			grid-gap: 1rem;
-			.anime-card {
-				max-width: 100%;
-				img {
-					display: block;
-					width: 100%;
-					height: 350px;
-					object-fit: cover;
-					border-radius: 4px;
-					box-shadow: $boxShadow;
-					transition: 0.2s ease;
-				  }
-			
-			}
-         
-		}
-    }
+  }
 }
-@media (min-width: 200px) and (max-width: 700px)  {
-	.App{
-		width:100%;
-		height:100%;
-	}
-    aside {
-     display: none;
+@media (max-width: 620px) {
+.search-box {input {
+    width: 80%;
+  }}
+  aside {
+    display: none;
+  }
+  .content-wrap {
+
+    .anime-list {
+      width: 100%;
+      margin: 0 0px 0px;
+      gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(100px, minmax(100px, 1fr));
+  
+     
+      .anime-card {
+        max-width: 10em;
+        img {
+          display: block;
+          width: 100px;
+          height: 30%;
+          object-fit: cover;
+          border-radius: 4px;
+          box-shadow: $boxShadow;
+          transition: 0.2s ease;
+        }
+      }
     }
-	.content-wrap {
-	
-    	.anime-list {
-			display: grid;
-			grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
-			grid-auto-flow: dense;
-			grid-gap: 1rem;
-			.anime-card {
-				max-width: 100%;
-				img {
-					display: block;
-					width: 100%;
-					height: 350px;
-					object-fit: cover;
-					border-radius: 4px;
-					box-shadow: $boxShadow;
-					transition: 0.2s ease;
-				  }
-			
-			}
-         
-		}
-    }
+  }
 }

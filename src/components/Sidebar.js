@@ -1,3 +1,5 @@
+import React from "react";
+
 function Sidebar({ topAnime }) {
   return (
     <aside>
@@ -6,7 +8,7 @@ function Sidebar({ topAnime }) {
       <h3>Top Anime</h3>
        
         {topAnime.map((anime) => (
-          <div key={anime.mal_id} className="top-list">
+          <div   key={anime.mal_id} className="top-list">
             <img  src={anime.image_url} alt={anime.title} />
             <div className="top-text">
             <a

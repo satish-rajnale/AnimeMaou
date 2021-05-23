@@ -19,7 +19,7 @@ function Sidebar({ topAnime }) {
       <nav>
         <div className="top-list">
           <div className="top-text">
-            <a href="#" target="_blank" key="more" rel="noreferrer">
+            <a href="/about" target="_blank" key="more" rel="noreferrer">
               More...
             </a>
           </div>

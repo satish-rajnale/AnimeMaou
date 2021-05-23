@@ -1,6 +1,6 @@
 import AnimeCard from './AnimeCard';
 
-function MainContent(props) {
+function MainContent({props}) {
     return (
         <main>
             {/* <button onClick={props.getRecents()}>Recents</button> */}

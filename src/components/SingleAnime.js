@@ -1,22 +1,14 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { useParams } from "react-router-dom";
+import AnimeData from "../context/AnimeDataContext";
+function SingleAnime() {
+  const topAnime = useContext(AnimeData);
+  const { mal_id } = useParams();
 
-function SingleAnime({anime}) {
-    return (
-        <div  key={anime.mal_id} className="top-list">
-        <img  src={anime.image_url} alt={anime.title} />
-        <div className="top-text">
-        <a
-          href={anime.url}
-          target="_blank"
-         
-          rel="noreferrer"
-        >
-          {anime.title}
-        </a>
-        <p >rating: {anime.score}</p>
-        </div>
-      </div>
-    )
+  const data = topAnime.filter((obj) => obj.mal_id == mal_id)[0];
+
+  console.log(data);
+  return <div>{topAnime.length == 0 ? <div>Loading...</div> : data.title}</div>;
 }
 
-export default SingleAnime
+export default SingleAnime;

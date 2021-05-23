@@ -1,1 +1,1 @@
-.singleAnime{margin:0;padding:0;box-sizing:border-box;width:100%;height:100%;display:grid;align-items:center;justify-content:center;text-align:center;background-color:black;color:white}
+.singleAnime{margin:0;padding:0;box-sizing:border-box;width:100%;height:100vh;text-align:center;background-image:linear-gradient(red, #000);color:white}.singleAnimeimage{border:5px solid black;border-radius:12px}.linktoMyAnimeList a{color:#f84121}.linktoMyAnimeList a:hover{color:white}

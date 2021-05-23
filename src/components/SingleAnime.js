@@ -16,6 +16,7 @@ function SingleAnime() {
            <h3 style={{textOverflow:"ellipsis"}}>{anime.title}</h3>
                <figure>
                    <img 
+                   className="singleAnimeimage"
                         src={anime.image_url}
                         alt={anime.title}/>
                </figure>
@@ -27,7 +28,7 @@ function SingleAnime() {
                <h3 style={{textOverflow:"ellipsis"}}>{anime.score}</h3>
                <h3 style={{textOverflow:"ellipsis"}}>{anime.start_date}</h3>
                <h3 style={{textOverflow:"ellipsis"}}>{anime.type}</h3>
-               <h3 style={{textOverflow:"ellipsis"}}>{anime.url}</h3>
+             <div className="linktoMyAnimeList"> Check the full description on <a href={anime.url}>MyAnimeList</a>.</div>
         
        </article>
       )

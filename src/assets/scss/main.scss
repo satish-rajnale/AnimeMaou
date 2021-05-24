@@ -161,6 +161,7 @@ header {
       gap: 10px;
       .anime-card {
         width: 100%;
+        max-width: 8rem;
         padding: 12px 8px;
         flex-wrap: nowrap;
         overflow: hidden;
@@ -227,7 +228,7 @@ header {
   background: #b30000;
 }
 
-@media (min-width: 738px) and (max-width: 900px) {
+@media screen and (min-width: 738px) and (max-width: 900px) {
   aside {
     display: none;
   }
@@ -252,7 +253,7 @@ header {
     }
   }
 }
-@media (max-width: 620px) {
+@media screen and (max-width: 730px) {
 .search-box {input {
     width: 80%;
   }}
@@ -266,8 +267,8 @@ header {
       margin: 0 0px 0px;
       gap: 10px;
       display: grid;
-      grid-template-columns: repeat(100px, minmax(100px, 1fr));
-  
+     
+      grid-template-columns: repeat(auto-fit, minmax(5em, 1fr)) !important;
      
       .anime-card {
         max-width: 10em;

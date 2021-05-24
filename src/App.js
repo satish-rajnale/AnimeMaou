@@ -1,8 +1,9 @@
 import { useState, useEffect, createContext } from "react";
-
+import Pagination from "./components/Pagination"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
+import MainContent from "./components/MainContent";
 import SingleAnime from "./components/SingleAnime";
 import AnimeData from "./context/AnimeDataContext";
 function App() {
@@ -27,7 +28,6 @@ function App() {
       e.preventDefault();
       FetchAnime(search);
     };
-    console.log(topAnime)
   
     const FetchAnime = async (query) => {
       const temp = await fetch(
@@ -49,7 +49,16 @@ function App() {
     <Router>
       <AnimeData.Provider value={topAnime}>
       <Switch>
-        <Route path="/about">
+      <Route exact path="/pages">
+          <Pagination
+            data={animeList}
+            RenderComponent={<MainContent/>}
+            title="Posts"
+            pageLimit={5}
+            dataLimit={10}
+          />
+        </Route>
+        <Route exact path="/about">
           <About />
         </Route>
         <Route exact path="/">
@@ -58,6 +67,7 @@ function App() {
         <Route path="/:mal_id">
           <SingleAnime />
         </Route>
+       
       </Switch>
       </AnimeData.Provider>
     </Router>

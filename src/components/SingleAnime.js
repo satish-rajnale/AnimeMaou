@@ -6,10 +6,10 @@ function SingleAnime() {
   const topAnime = useContext(AnimeData);
   const { mal_id } = useParams();
 
-  const data = topAnime.filter((obj) => obj.mal_id == mal_id);
+  const data = topAnime.filter((obj) => obj.mal_id === mal_id);
 
-  console.log(data);
-  return <div>{topAnime.length == 0 ? <div>Loading...</div> : 
+  // console.log(data);
+  return <div>{topAnime.length === 0 ? <div>Loading...</div> : 
     
       data.map(anime => (
         <article className="singleAnime">

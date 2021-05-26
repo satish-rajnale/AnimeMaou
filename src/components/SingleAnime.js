@@ -9,29 +9,23 @@ function SingleAnime() {
   const [pictures, setpictures] = useState([]);
   const data = topAnime.filter((obj) => obj.mal_id === parseInt(mal_id));
   const [imageSrc, setimageSrc] = useState([]);
-
-console.log(pictures)
+  useEffect(() => {
+    getAnime();
+  }, []);
 
 
   const getAnime = async () => {
     const temp = await fetch(
       `https://api.jikan.moe/v3/anime/${mal_id}/pictures`
     ).then((res) => res.json());
-    
+
     setpictures(temp.pictures);
-    
+    console.log("fetched");
   };
-console.log("images", imageSrc)
-// if(pictures.length > 0){
-//   pictures.map((i) => {
-//     setimageSrc(...imageSrc, i.large)
-//     console.log("i.large")
-//   })
-// }
+  console.log("images", imageSrc);
+
   // console.log(pictures)
-  useEffect(() => {
-    getAnime();
-  }, []);
+  
   return (
     <div>
       {topAnime.length === 0 ? (
@@ -76,9 +70,6 @@ console.log("images", imageSrc)
                   <p style={{ textOverflow: "ellipsis" }}>
                     <label>Type:</label> {anime.type}
                   </p>
-
-
-                  
                 </div>
               </article>
               <div className="linktoMyAnimeList">

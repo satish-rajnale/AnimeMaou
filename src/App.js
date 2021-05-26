@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
 import Pagination from "./components/Pagination"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
+import MainContent from "./components/MainContent";
 import SingleAnime from "./components/SingleAnime";
 import AnimeData from "./context/AnimeDataContext";
+import AnimeCard from "./components/AnimeCard";
 function App() {
   const [animeList, setAnimeList] = useState([]);
   const [topAnime, setTopAnime] = useState([]);
@@ -17,7 +19,7 @@ function App() {
         "https://api.jikan.moe/v3/top/anime/1/bypopularity"
       ).then((res) => res.json());
   
-      setTopAnime(temp.top.slice(0, 10));
+      setTopAnime(temp.top.slice(0, 30));
     };
     useEffect(() => {
       getAnime();
@@ -48,15 +50,15 @@ function App() {
     <Router>
       <AnimeData.Provider value={props}>
       <Switch>
-      {/* <Route exact path="/pages">
+      <Route exact path="/pages">
           <Pagination
-            data={animeList}
-            RenderComponent={<MainContent/>}
+            data={topAnime}
+            RenderComponent={AnimeCard}
             title="Posts"
             pageLimit={5}
             dataLimit={10}
           />
-        </Route> */}
+        </Route>
         <Route exact path="/about">
           <About />
         </Route>

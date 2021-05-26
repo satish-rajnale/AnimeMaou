@@ -41,11 +41,11 @@ export default function Pagination({ data, RenderComponent, title, pageLimit, da
         <h1>{title}</h1>
     
         {/* show the posts, 10 posts at a time */}
-        {/* <div className="dataContainer">
+        <div className="dataContainer">
           {getPaginatedData().map((d, idx) => (
-            <RenderComponent key={idx} data={d} />
+            <RenderComponent key={idx} anime={d} />
           ))}
-        </div> */}
+        </div>
     
         {/* show the pagiantion
             it consists of next and previous buttons

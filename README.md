@@ -4,7 +4,9 @@ A single page web-app to view top monthly anime's or a list of recent releases o
 
 I used React as the backbone of this web-app and SCSS preprocessor for styling.
 
-For the data on anime-list I used Jikan api which is a great fast and easy to use api by MyAnimeList.\
+For the data on anime-list I used Jikan api which is a great fast and easy to use api by MyAnimeList.
+
+This project is intended
 
 ## Demo:
 

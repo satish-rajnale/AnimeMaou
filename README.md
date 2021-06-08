@@ -6,7 +6,7 @@ I used React as the backbone of this web-app and SCSS preprocessor for styling.
 
 For the data on anime-list I used Jikan api which is a great fast and easy to use api by MyAnimeList.
 
-This project is intended
+This project is intended to get a good understanding of react and css preprocessor and react-router.
 
 ## Demo:
 

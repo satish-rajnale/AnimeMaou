@@ -8,6 +8,10 @@ For the data on anime-list I used Jikan api which is a great fast and easy to us
 
 This project is intended to get a good understanding of react and css preprocessor and react-router.
 
+Using react router I have implemented a single page generator function for each anime on click.
+
+
+
 ## Demo:
 
 <a href="https://anime-maou.web.app/"><img src="https://github.com/satish-rajnale/AnimaeMaou/blob/master/public/animeMaou.gif"/></a>

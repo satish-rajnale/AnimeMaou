@@ -10,7 +10,7 @@ This project is intended to get a good understanding of react and css preprocess
 
 Using react router I have implemented a single page generator function for each anime on click.
 
-
+While using react router for dynamic routing considerate amount of understanding of switch and link is required.
 
 ## Demo:
 

@@ -1,1 +1,277 @@
-*,*::after,*::before{margin:0;padding:0;box-sizing:border-box;font-family:"Courier New", Courier, monospace}.App{background-color:#262c69;width:100%;height:100%}header{padding-top:40px;padding-bottom:30px}header h1{color:#d4d3d3;font-size:1.2em;font-weight:400;text-align:center;text-shadow:2px 2px 4px #000000}header h1 :hover{cursor:pointer}header h1 strong{color:#ff2222}.content-wrap{display:flex}.content-wrap aside{max-width:fit-content;padding-right:16px}.content-wrap aside nav{padding-left:16px;padding-right:16px}.content-wrap aside nav h3{color:#df4b4b;font-size:27px;padding:8px 10px;font-family:"Courier New", Courier, monospace;margin-bottom:16px}.content-wrap aside nav .top-list{background-color:#343c8e;border-radius:8px;display:block;padding:5px 12px;height:fit-content;min-height:2em;align-items:center;width:280px;display:flex;margin-bottom:16px;transition:0.2s;cursor:pointer;box-shadow:0 2.8px 2.2px rgba(0,0,0,0.034),0 6.7px 5.3px rgba(0,0,0,0.048),0 12.5px 10px rgba(0,0,0,0.06),0 22.3px 17.9px rgba(0,0,0,0.072),0 41.8px 33.4px rgba(0,0,0,0.086),0 100px 80px rgba(0,0,0,0.12)}.content-wrap aside nav .top-list img{height:57px;width:39px;border-radius:4px}.content-wrap aside nav .top-list .top-text{display:flex;flex-direction:column;align-items:flex-start;padding-left:10px}.content-wrap aside nav .top-list .top-text p{font-size:16px;color:#c7c8d6;font-variant-numeric:ordinal;font-family:"Source Sans Pro";line-height:40px}.content-wrap aside nav .top-list .top-text a{text-align:left;color:#c7c8d6;font-size:17px;text-decoration:none}.content-wrap aside nav .top-list:hover{box-shadow:0 2.8px 2.2px rgba(0,0,0,0.34),0 6.7px 5.3px rgba(0,0,0,0.8),0 12.5px 10px rgba(0,0,0,0.6),0 22.3px 17.9px rgba(0,0,0,0.072),0 41.8px 33.4px rgba(0,0,0,0.086),0 100px 80px rgba(0,0,0,0.2);background-color:#313131;transform:scale(1.08);transition:0.2s ease;color:#fff}.content-wrap main{flex:1 1 0%;padding:0px 16px}.content-wrap main .main-head{display:flex;justify-content:flex-end}.content-wrap main .main-head .search-box{display:flex;justify-content:flex-end;flex:1 1 0%}.content-wrap main .main-head .search-box input{appearance:none;text-decoration:none;outline:none;border:none;font-size:16px;display:block;width:50%;height:2.55em;max-width:50em;padding:13px;border-radius:5px;background-color:#2a2828;box-shadow:0 2.8px 2.2px rgba(0,0,0,0.034),0 6.7px 5.3px rgba(0,0,0,0.048),0 12.5px 10px rgba(0,0,0,0.06),0 22.3px 17.9px rgba(0,0,0,0.072),0 41.8px 33.4px rgba(0,0,0,0.086),0 100px 80px rgba(0,0,0,0.12);transition:0.4s}.content-wrap main .main-head .search-box input ::placeholder{color:#000}.content-wrap main .main-head .search-box input:focus,.content-wrap main .main-head .search-box input:valid{background-color:#313030;color:#fff}.content-wrap main .anime-list{display:grid;grid-template-columns:repeat(auto-fit, minmax(8em, 1fr));margin:1em -8px 0px;gap:10px}.content-wrap main .anime-list .anime-card{width:100%;max-width:8rem;padding:12px 8px;flex-wrap:nowrap;overflow:hidden;text-overflow:ellipsis}.content-wrap main .anime-list .anime-card a{text-decoration:none}.content-wrap main .anime-list .anime-card figure{display:block;margin-bottom:16px}.content-wrap main .anime-list .anime-card figure img{display:block;width:7rem;height:11.8em;object-fit:cover;border-radius:4px;box-shadow:0 2.8px 2.2px rgba(0,0,0,0.034),0 6.7px 5.3px rgba(0,0,0,0.048),0 12.5px 10px rgba(0,0,0,0.06),0 22.3px 17.9px rgba(0,0,0,0.072),0 41.8px 33.4px rgba(0,0,0,0.086),0 100px 80px rgba(0,0,0,0.12);transition:0.2s ease}.content-wrap main .anime-list .anime-card h3{color:#ffffff;font-size:22px;font-weight:400;text-overflow:ellipsis}.content-wrap main .anime-list .anime-card:hover figure img{box-shadow:0 2.8px 2.2px rgba(0,0,0,0.34),0 6.7px 5.3px rgba(0,0,0,0.8),0 12.5px 10px rgba(0,0,0,0.6),0 22.3px 17.9px rgba(0,0,0,0.072),0 41.8px 33.4px rgba(0,0,0,0.086),0 100px 80px rgba(0,0,0,0.2);transform:scale(1.08)}.content-wrap main .anime-list .anime-card:hover h3{color:#ff4949;font-weight:600}::-webkit-scrollbar{width:15px}::-webkit-scrollbar-track{box-shadow:inset 0 0 5px grey}::-webkit-scrollbar-thumb{background:#494949}::-webkit-scrollbar-thumb:hover{background:#b30000}@media screen and (min-width: 738px) and (max-width: 900px){aside{display:none}.content-wrap .anime-list{display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));grid-auto-flow:dense;grid-gap:1rem}.content-wrap .anime-list .anime-card{max-width:100%}.content-wrap .anime-list .anime-card img{display:block;width:100%;height:350px;object-fit:cover;border-radius:4px;box-shadow:0 2.8px 2.2px rgba(0,0,0,0.034),0 6.7px 5.3px rgba(0,0,0,0.048),0 12.5px 10px rgba(0,0,0,0.06),0 22.3px 17.9px rgba(0,0,0,0.072),0 41.8px 33.4px rgba(0,0,0,0.086),0 100px 80px rgba(0,0,0,0.12);transition:0.2s ease}}@media screen and (max-width: 730px){.search-box input{width:80%}aside{display:none}.content-wrap .anime-list{width:100%;margin:0 0px 0px;gap:10px;display:grid;grid-template-columns:repeat(auto-fit, minmax(5em, 1fr)) !important}.content-wrap .anime-list .anime-card{max-width:10em}.content-wrap .anime-list .anime-card img{display:block;width:100px;height:30%;object-fit:cover;border-radius:4px;box-shadow:0 2.8px 2.2px rgba(0,0,0,0.034),0 6.7px 5.3px rgba(0,0,0,0.048),0 12.5px 10px rgba(0,0,0,0.06),0 22.3px 17.9px rgba(0,0,0,0.072),0 41.8px 33.4px rgba(0,0,0,0.086),0 100px 80px rgba(0,0,0,0.12);transition:0.2s ease}}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.App {
+  background-color: #262c69;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+header h1 {
+  color: #d4d3d3;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+header h1 :hover {
+  cursor: pointer;
+}
+
+header h1 strong {
+  color: #ff2222;
+}
+
+.content-wrap {
+  display: flex;
+}
+
+.content-wrap aside {
+  max-width: fit-content;
+  padding-right: 16px;
+}
+
+.content-wrap aside nav {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.content-wrap aside nav h3 {
+  color: #df4b4b;
+  font-size: 27px;
+  padding: 8px 10px;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 16px;
+}
+
+.content-wrap aside nav .top-list {
+  background-color: #343c8e;
+  border-radius: 8px;
+  display: block;
+  padding: 5px 12px;
+  height: fit-content;
+  min-height: 2em;
+  align-items: center;
+  width: 280px;
+  display: flex;
+  margin-bottom: 16px;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.content-wrap aside nav .top-list img {
+  height: 57px;
+  width: 39px;
+  border-radius: 4px;
+}
+
+.content-wrap aside nav .top-list .top-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.content-wrap aside nav .top-list .top-text p {
+  font-size: 16px;
+  color: #c7c8d6;
+  font-variant-numeric: ordinal;
+  font-family: "Source Sans Pro";
+  line-height: 40px;
+}
+
+.content-wrap aside nav .top-list .top-text a {
+  text-align: left;
+  color: #c7c8d6;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.content-wrap aside nav .top-list:hover {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.34), 0 6.7px 5.3px rgba(0, 0, 0, 0.8), 0 12.5px 10px rgba(0, 0, 0, 0.6), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.2);
+  background-color: #313131;
+  transform: scale(1.08);
+  transition: 0.2s ease;
+  color: white;
+}
+
+.content-wrap main {
+  flex: 1 1 0%;
+  padding: 0px 16px;
+}
+
+.content-wrap main .main-head {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-wrap main .main-head .search-box {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 0%;
+}
+
+.content-wrap main .main-head .search-box input {
+  appearance: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  display: block;
+  width: 50%;
+  height: 2.55em;
+  max-width: 50em;
+  padding: 13px;
+  border-radius: 5px;
+  background-color: #2a2828;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  transition: 0.4s;
+}
+
+.content-wrap main .main-head .search-box input ::placeholder {
+  color: black;
+}
+
+.content-wrap main .main-head .search-box input:focus, .content-wrap main .main-head .search-box input:valid {
+  background-color: #313030;
+  color: #fff;
+}
+
+.content-wrap main .anime-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+  margin: 1em -8px 0px;
+  gap: 10px;
+}
+
+.content-wrap main .anime-list .anime-card {
+  width: 100%;
+  max-width: 8rem;
+  padding: 12px 8px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content-wrap main .anime-list .anime-card a {
+  text-decoration: none;
+}
+
+.content-wrap main .anime-list .anime-card figure {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.content-wrap main .anime-list .anime-card figure img {
+  display: block;
+  width: 7rem;
+  height: 11.8em;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+}
+
+.content-wrap main .anime-list .anime-card h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+}
+
+.content-wrap main .anime-list .anime-card:hover figure img {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.34), 0 6.7px 5.3px rgba(0, 0, 0, 0.8), 0 12.5px 10px rgba(0, 0, 0, 0.6), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08);
+}
+
+.content-wrap main .anime-list .anime-card:hover h3 {
+  color: #ff4949;
+  font-weight: 600;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #494949;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+@media screen and (min-width: 738px) and (max-width: 900px) {
+  aside {
+    display: none;
+  }
+  .content-wrap .anime-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-flow: dense;
+    grid-gap: 1rem;
+  }
+  .content-wrap .anime-list .anime-card {
+    max-width: 100%;
+  }
+  .content-wrap .anime-list .anime-card img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    transition: 0.2s ease;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .search-box {
+    flex: 1;
+  }
+  .search-box input {
+    width: 100%;
+    max-width: 100em;
+  }
+  aside {
+    display: none;
+  }
+  .content-wrap .anime-list {
+    width: 100%;
+    margin: 0 0px 0px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5em, 1fr)) !important;
+  }
+  .content-wrap .anime-list .anime-card {
+    max-width: 10em;
+  }
+  .content-wrap .anime-list .anime-card img {
+    display: block;
+    width: 100px;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    transition: 0.2s ease;
+  }
+}
+/*# sourceMappingURL=main.css.map */

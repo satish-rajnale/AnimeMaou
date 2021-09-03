@@ -254,8 +254,11 @@ header {
   }
 }
 @media screen and (max-width: 730px) {
-.search-box {input {
-    width: 80%;
+.search-box {
+  flex:1;
+  input {
+    width: 100%;
+    max-width: 100em;
   }}
   aside {
     display: none;

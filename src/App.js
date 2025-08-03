@@ -1,77 +1,49 @@
-import { useState, useEffect, createContext } from "react";
-import Pagination from "./components/Pagination"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import About from "./components/About";
-import Home from "./components/Home";
-import MainContent from "./components/MainContent";
-import SingleAnime from "./components/SingleAnime";
-import AnimeData from "./context/AnimeDataContext";
-import AnimeCard from "./components/AnimeCard";
-function App() {
-  const [animeList, setAnimeList] = useState([]);
-  const [topAnime, setTopAnime] = useState([]);
-  const [search, setSearch] = useState("");
-// const AnimeData = createContext({
-//   topAnime: topAnime
-// });
-  const getAnime = async () => {
-      const temp = await fetch(
-        "https://api.jikan.moe/v3/top/anime/1/bypopularity"
-      ).then((res) => res.json());
-  
-      setTopAnime(temp.top.slice(0, 30));
-    };
-    useEffect(() => {
-      getAnime();
-    }, []);
-  
-    const handleSearch = (e) => {
-      e.preventDefault();
-      FetchAnime(search);
-    };
-  
-    const FetchAnime = async (query) => {
-      const temp = await fetch(
-        `https://api.jikan.moe/v3/search/anime?q=${query}&order_by=popularity&sort=desc`
-      ).then((res) => res.json());
-      //  // const episodes = await fetch(`https://api.jikan.moe/v3/anime/1/episodes/2`)
-      //   .then(res => res.json());
-      setAnimeList(temp.results);
-    };
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+// import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import Header from './components/ui/Header';
+import Home from './pages/Home';
+import AnimeDetail from './pages/AnimeDetail';
+import TopAnime from './pages/TopAnime';
+import Seasonal from './pages/Seasonal';
+import Upcoming from './pages/Upcoming';
+import Watchlist from './pages/Watchlist';
+import SearchResults from './pages/SearchResults';
+import './index.css';
 
-    const props = {
-      handleSearch: handleSearch,
-      search:search,
-      setSearch:setSearch,
-      animeList:animeList,
-      topAnime:topAnime
-    }
+// Create a client
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 2,
+      refetchOnWindowFocus: false,
+      staleTime: 5 * 60 * 1000, // 5 minutes
+    },
+  },
+});
+
+function App() {
   return (
-    <Router>
-      <AnimeData.Provider value={props}>
-      <Switch>
-      <Route exact path="/pages">
-          <Pagination
-            data={topAnime}
-            RenderComponent={AnimeCard}
-            title="Posts"
-            pageLimit={5}
-            dataLimit={10}
-          />
-        </Route>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/">
-          <Home props ={props}/>
-        </Route>
-        <Route path="/:mal_id">
-          <SingleAnime />
-        </Route>
-       
-      </Switch>
-      </AnimeData.Provider>
-    </Router>
+    <QueryClientProvider client={queryClient}>
+      <Router>
+        <div className="App">
+          <Header />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/anime/:id" element={<AnimeDetail />} />
+              <Route path="/top" element={<TopAnime />} />
+              <Route path="/seasonal" element={<Seasonal />} />
+              <Route path="/upcoming" element={<Upcoming />} />
+              <Route path="/watchlist" element={<Watchlist />} />
+              <Route path="/search" element={<SearchResults />} />
+            </Routes>
+          </main>
+        </div>
+      </Router>
+      {/* <ReactQueryDevtools initialIsOpen={false} /> */}
+    </QueryClientProvider>
   );
 }
 

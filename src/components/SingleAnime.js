@@ -16,7 +16,7 @@ function SingleAnime() {
 
   const getAnime = async () => {
     const temp = await fetch(
-      `https://api.jikan.moe/v3/anime/${mal_id}/pictures`
+      `https://api.jikan.moe/v4/anime/${mal_id}/pictures`
     ).then((res) => res.json());
 
     setpictures(temp.pictures);
